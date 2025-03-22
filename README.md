@@ -1,12 +1,14 @@
 # Jonathan Perry
 
+<img src="./jonathan-perry.png" alt="A profile picture of Jonathan Perry" width="25%" />
+
 ## Senior/Lead Full-Stack Developer
 
-I have thirty years experience building websites and have been creating **JavaScript** applications since 1998.
+I have thirty years experience building websites and have been creating **JavaScript** applications since 1999.
 
 I use **EcmaScript** and **TypeScript** with **React** and **Node**.
 
-I'm an accessibility advocate and recommend static **HTML** where it's all that's needed.
+I'm an accessibility advocate.
 
 You can [email me directly](mailto:jonathanperry@jonathanperry.com) or [message me on LinkedIn](https://linkedin.com/pub/jonathan-perry/0/327/822).
 
@@ -16,24 +18,15 @@ My [CV is available on Dropbox](https://www.dropbox.com/scl/fi/p7xxztow6wmkrvjlh
 
 The [Sequence Media](https://github.com/sequencemedia) organisation has the majority of my public projects.
 
-The [Modern Poacher](https://github.com/sequencemedia) organisation has some more, which are related to or derived from the **Zashiki Karakuri** platform.
+The [Modern Poacher](https://github.com/modernpoacher) organisation has some more, which are related to or derived from the **Zashiki Karakuri** platform.
 
-The projects for **Sequence Media** are a sample of both my professional and personal work.
+The projects for **Sequence Media** are a sample of both my professional and personal work but they _don't_ represent the totality. I also use AWS and Azure and Docker and MongoDB but there's nothing about them here!
+
+---
 
 ### React
 
-Many of my **React** projects were begun before other, better implementations were available. I continue to maintain them because they have proven their value for edge-cases and emergencies! Some are _class_ components and some use _hooks_ because I have been writing **React** since 2013 and class components still make sense for those projects. (Day-to-day I prefer _function_ components and _hooks_.)
-
-#### Isomorphism
-
-Since **React** can be executed at the server I have always preferred to implement it for both client- and server-side rendering, which led me to create these projects which do nothing more than expose existing features of **React** in an ever-so-slightly more simple way.
-
-These projects have been used in both [Express](https://expressjs.com/) and [Hapi](https://hapi.dev/).
-
-- [`react-render`](https://github.com/sequencemedia/react-render)
-- [`react-router-render`](https://github.com/sequencemedia/react-router-render)
-- [`react-redux-render`](https://github.com/sequencemedia/react-redux-render)
-- [`react-router-redux-render`](https://github.com/sequencemedia/react-router-redux-render)
+Many of my **React** projects were begun before other, better implementations were available. I continue to maintain them because they have proven their value for edge-cases and emergencies. Some are _class_ components and some use _hooks_. I have been writing **React** since 2013 and while there has always been a preference in the community for _function_ components, _class_ components still make sense for some use-cases. (Day-to-day I prefer _function_ components and _hooks_.)
 
 #### `react-select-element`
 
@@ -49,7 +42,20 @@ I most recently used [`react-select-element`](https://github.com/sequencemedia/r
 
 #### `react-router-pagination`
 
-An [_example implementation_](https://github.com/sequencemedia/react-router-pagination-io) of the component (using a **Hapi** server) has never been starred but has been forked three times more often than [the component itself](https://github.com/sequencemedia/react-router-pagination). 🤷‍♂️
+An [_example implementation_](https://github.com/sequencemedia/react-router-pagination-io) of the component (using a **Hapi** server) but has been forked three times more often than [the component itself](https://github.com/sequencemedia/react-router-pagination). 🤷‍♂️
+
+#### Isomorphism
+
+Since **React** can be executed at the server I've always preferred to implement it for both client- and server-side rendering, which led me to create these projects which do nothing more than expose the server-side rendering features of **React** in an ever-so-slightly more simple way.
+
+These projects have been used in both [Express](https://expressjs.com/) and [Hapi](https://hapi.dev/).
+
+- [`react-render`](https://github.com/sequencemedia/react-render)
+- [`react-router-render`](https://github.com/sequencemedia/react-router-render)
+- [`react-redux-render`](https://github.com/sequencemedia/react-redux-render)
+- [`react-router-redux-render`](https://github.com/sequencemedia/react-router-redux-render)
+
+---
 
 ### Node
 
@@ -59,7 +65,7 @@ A favourite project is [Music Library](https://github.com/sequencemedia/music-li
 
 These were created for [iTunes](https://en.wikipedia.org/wiki/iTunes) but are now used for [Music](https://en.wikipedia.org/wiki/Apple_Music).
 
-I maintain lots of playlists which are described in `Library.xml`. 
+I maintain lots of playlists which are described in `Library.xml`.
 
 Generating `Library.xml` used to be a setting in **iTunes** but for **Music** I use a standalone tool on a schedule.
 
@@ -74,7 +80,9 @@ These projects have been used with both [Plex](https://www.plex.tv/) and [MinimS
 
 I love combining **Node** and **Bash**.
 
-Versions of these **JavaScript** functions were used in a production app. I used **Bash** in development to validate the **JS** and then made it a utility in case of failure. (The likely cause of any failure would be elsewhere, but at the very least it's useful to confirm that _given the correct settings the **JS** will encrypt and decrypt successfully_).
+Versions of [these `encrypt` and `decrypt` **JavaScript** functions](https://github.com/sequencemedia/crypto) were used in a production Node app. I used **Bash** in development to validate the **JS** implementation and then made it a utility in case of failure after release of the app into production. (The likely cause of any failure would have been elsewhere, but it's useful to confirm that _given the correct settings_ the **JS** will encrypt and decrypt successfully.)
+
+---
 
 ### Modules
 
@@ -90,36 +98,13 @@ It's very hard to describe and working out the maths for the co-ordinates was ha
 
 I have **D3** to thank for a crowd-pleasing swoosh once I had those co-ordinates.
 
+---
+
 ### Performance
 
-A lot of my work from before 2012 was preoccupied with performance. You can see the remnants of that in the projects initiated before then (which may have found their way into GitHub only more recently as _curiosities_).
+A lot of my work from before 2012 was preoccupied with performance. You can see the remnants of that in the projects initiated before then (which may have found their way into GitHub only more recently as [_curiosities_](#curiosities)). Now, I tend to favour _comprehension_ (something is easy to understand, preferably at first glance).
 
-While it's no longer a preoccupation, I find it useful to remain mindful of how the machine works.
-
-For instance, here are two reducer functions which produce an identical result.
-
-#### a)
-
-```javascript
-const a = [] // An array of items
-
-const b = a.reduce((accumulator, v) => {
-    if (v) accumulator.push(v)
-    return accumulator
-}, [])
-```
-
-#### b)
-
-```javascript
-const a = [] // An array of items
-
-const b = a.reduce((accumulator, v) => (v) ? accumulator.concat(v) : accumulator, [])
-```
-
-For dozens or hundred of items, both are fine. For many thousands of items, one will be faster than the other, and the slower will become even slower as the array becomes larger.
-
-It may be obvious to you which is which. I prefer one because it looks nicer! But _generally_ I implement the other, unless I am certain that the array is small and no-one is watching.
+---
 
 ### Curiosities
 
@@ -131,7 +116,7 @@ I'm sure I must have taken those scripts with me on a floppy disk into all sorts
 
 I continue to manage these projects as _curiosities_.
 
-<hr/>
+---
 
 - [Email me directly](mailto:jonathanperry@jonathanperry.com)
 - [Message me on LinkedIn](https://linkedin.com/pub/jonathan-perry/0/327/822)
